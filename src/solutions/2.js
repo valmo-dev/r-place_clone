@@ -33,6 +33,8 @@ class Pixel {
   static PIXEL_PICKER_CLASS = 'pixel-picker';
 
   constructor(color) {
+    // 🦁 Stocke la couleur dans _color
+    // 🦁 Crée un élément div qui sera stocké dans this.element
     this._color = color;
     this.element = document.createElement('div');
     this.element.classList.add(Pixel.PIXEL_CLASS);
