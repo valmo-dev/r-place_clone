@@ -2,7 +2,7 @@ class Game {
   static COLORS = ['#ff4500', '#00cc78', '#2450a5', '#fed734', '#f9fafc'];
   static BOARD_SIZE = [25, 25];
   static PIXEL_SIZE = 20;
-  static TIME_TO_WAIT = 3000;
+  static TIME_TO_WAIT = 5000;
 
   lastPixelAddedDate = Date.now();
 
@@ -56,7 +56,7 @@ class Game {
         clearInterval(this.interval);
         this.timeLeft.innerText = '';
       }
-    }, 990);
+    }, 700);
   }
   // 🦁 Crée une méthode `initPixels`
   initPixels() {
